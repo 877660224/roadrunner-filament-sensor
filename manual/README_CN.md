@@ -1,6 +1,6 @@
 # Roadrunner: 高分辨率线材运动传感器
 
-![预览](images/assembly.png)
+![预览](../images/assembly.png)
 
 ### 特性
 
@@ -189,7 +189,7 @@ FILAMENT_SENSOR_MEASURE SENSOR=roadrunner TEMP=250 LENGTH=10 SPEED=120 COUNT=1
 
 如果保存了图表，输出将如下所示：
 
-![预览](images/FILAMENT_SENSOR_MEASURE_timeline_0_20240118_100732.png)
+![预览](../images/FILAMENT_SENSOR_MEASURE_timeline_0_20240118_100732.png)
 
 ##### 最大流量校准
 
@@ -208,7 +208,7 @@ CALIBRATE_MAX_FLOW SENSOR=roadrunner TEMP=250 START=1 STOP=50 SAVE_GRAPH=1
 * `MAX_SPEED_DEVIATION`: 预期速度和测量速度之间可接受的偏差百分比。用于推荐最大体积流量。默认为 0.05（5%）。
 * 使用 `SAVE_GRAPH=1` 参数，所有测量的图表将保存到 klipper 的当前工作目录（通常为 `~/klipper/`）。
 
-![预览](images/example_max_flow.png)
+![预览](../images/example_max_flow.png)
 
 当给定的体积流量太高而无法以该速率进行所有测量时，此宏将发出警告。这通常对应于挤出机的物理极限，此时背压过高，挤出机无法跟上并咬入线材。
 
