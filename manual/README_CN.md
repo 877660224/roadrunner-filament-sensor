@@ -169,7 +169,7 @@ CALIBRATE_FILAMENT_SENSOR_ROTATION_DISTANCE SENSOR=roadrunner TEMP=250 LENGTH=30
 
 获取距离测量后，按频率排序，使用频率最高的测量值计算新的 `rotation_distance`。例如，如果 8/10 次测量在预期 25mm 时读取 25.62mm，则 `rotation_distance` 过高，会自动建议新值。将新的 `rotation_distance` 保存在传感器配置中后，使用相同的宏参数重复测试应测量正确的距离。测量之间的偏差相对于最小可检测位置变化报告，小偏差表示可重复的测量。虽然传感器精度很高，但其多次读数的准确性和可重复性可能受到现实因素的影响，例如 PTFE 管的弹性、传感器与挤出机主体的连接等。
 
-![预览](images/example_rotation_distance.png)
+![预览](../images/example_rotation_distance.png)
 
 ##### 测量 G1 命令
 
@@ -216,7 +216,7 @@ CALIBRATE_MAX_FLOW SENSOR=roadrunner TEMP=250 START=1 STOP=50 SAVE_GRAPH=1
 
 如果保存了图表，输出将如下所示：
 
-![预览](images/CALIBRATE_MAX_FLOW_measured_vs_expected_speed_20240117_195539.png)
+![预览](../images/CALIBRATE_MAX_FLOW_measured_vs_expected_speed_20240117_195539.png)
 
 ##### 启用非线性挤出补偿（实验性）
 
